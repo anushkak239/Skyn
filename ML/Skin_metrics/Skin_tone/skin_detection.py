@@ -196,7 +196,7 @@ def final_segment(images, cluster_label_mat):
     final_segment_img = cv2.bitwise_and(
         images["BGR"], images["BGR"], mask=cluster_label_mat)
     images["final_segment"] = final_segment_img
-    # display_image(final_segment_img, "final segmentation")
+    display_image(final_segment_img, "final segmentation")
 
 
-# print(skin_detection("images\Optimized-selfieNig-cropped.jpg"))
+print(skin_detection("images\Optimized-selfieNig-cropped.jpg"))

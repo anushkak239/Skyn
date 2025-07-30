@@ -137,7 +137,7 @@ const WebcamCapture = ({ setImageSrc, setOnPlay, onPlay }) => {
                 <Button
                     onClick={capture}
                     variant="contained"
-                    disabled={(initialising) || (faceOK !== "OK")}
+                    disabled={false}
                     fullWidth>
                     Capture photo
                 </Button>

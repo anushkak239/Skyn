@@ -32,7 +32,7 @@ for category in categories:
         try:
             driver.get(f"{base_url}{category}?p={i}")
 
-            # Wait for at most 10 seconds for the products to appear 
+            #  10 seconds for the products to appear 
             search_results = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "desktopSearchResults")))
             
@@ -42,7 +42,7 @@ for category in categories:
             dic = {'label':category, 'url':[]}
             temp = []
 
-            # Collect the individual URLs of the first {products_from_each_category} products and put them in the dictionary 
+           
             for product in products:
                 product_url = product.find_element_by_tag_name('a').get_attribute('href')
                 print(f"{category} : {product_url}")
