@@ -1,3 +1,13 @@
+skyn_env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.env
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
